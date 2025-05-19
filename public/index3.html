@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Rental Service</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Car Rental Service</h1>
+        </div>
+    </header>
+
+    <main class="container"> 
+    <div class="car">
+          <img src="car1.jpeg" alt="container">
+        </div>
+
+        <section id="search">
+            <h2>Search Your Category</h2>
+            <label for="searchCategory">Categories:</label>
+            <select id="searchCategory" onchange="populateModels()">
+                <option value="">Select Category</option>
+                <option value="Economy">Economy</option>
+                <option value="Standard">Standard</option>
+                <option value="Luxury">Luxury</option>
+                <option value="SUV">SUV</option>
+            </select>
+
+            <button type="button" onclick="searchBookings()">Search</button>
+        </section>
+
+        <section id="booking">
+            <h2>Book Your Car</h2>
+            <form id="rentalForm">
+                <label for="carCategory">Cars:</label>
+                <input type="text" id="carCategory" required>
+
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" required>
+
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" required>
+
+            </form>
+        </section>
+
+        <section id="userDetails">
+            <h2>Enter Your Details</h2>
+            <form id="userDetailsForm">
+                <label for="drivingLicense">Driving License No.:</label>
+                <input type="text" id="drivingLicense" maxlength="18" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" pattern="[0-9]{10}" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="street" placeholder="Street" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <input type="text" id="zipcode" pattern="[0-9]{5}" placeholder="Zipcode" required>
+            </form>
+        </section>
+
+        <section id="membership">
+            <h2>Are You a Member?</h2>
+            <select id="membershipDropdown" onchange="toggleMembershipID()">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+ 
+            <div id="membershipIDSection" style="display: none;">
+                <label for="membershipID">Enter Your Membership-ID:</label>
+                <input type="text" id="membershipID" maxlength="5">
+            </div>
+            <button type="button" onclick="submitForm()">Rent Now</button>
+        </section>
+
+        <section id="result">
+
+            <h2>Booking Details</h2>
+            <div id="bookingDetails"></div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+   
+    <script>
+        function toggleMembershipID() {
+            var membershipDropdown = document.getElementById("membershipDropdown");
+            var membershipIDSection = document.getElementById("membershipIDSection");
+
+            if (membershipDropdown.value === "Yes") {
+                membershipIDSection.style.display = "block";
+            } else {
+                membershipIDSection.style.display = "none";
+            }
+        }
+   
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+   /* background-image: url('car1.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;*/
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main {
+    padding: 40px 0;
+}
+
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Change the color to a vibrant one */
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cccccc; /* Change the color to a subtle one */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00; /* Change the button color to a vibrant one */
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.cta-button:hover {
+    background-color: #ff9900; /* Change the hover color to a darker shade */
+}
+
+.services, .about-us, .contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Add styles for additional sections as needed */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999; /* Change the color to a lighter shade */
+}
+
+

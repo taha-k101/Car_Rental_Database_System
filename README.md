@@ -9,6 +9,22 @@ Sept 2023 - Nov 2023
 
 ## Tech Stack:
 
-Backend: Node.js – Server-side programming and logic handling MySQL – Relational database for storing and managing structured data PL/SQL – For stored procedures, triggers, and cursors MySQL Workbench – Database design and administration tool
+### Backend: 
 
-Frontend: HTML – Markup language for building web pages CSS – Styling and layout design JavaScript – Client-side scripting for dynamic interactions Bootstrap / Tailwind CSS – For responsive and mobile-friendly UI design
+Node.js – Server-side programming and logic handling 
+
+MySQL – Relational database for storing and managing structured data 
+
+PL/SQL – For stored procedures, triggers, and cursors 
+
+MySQL Workbench – Database design and administration tool
+
+### Frontend: 
+
+HTML – Markup language for building web pages 
+
+CSS – Styling and layout design 
+
+JavaScript – Client-side scripting for dynamic interactions 
+
+Bootstrap / Tailwind CSS – For responsive and mobile-friendly UI design

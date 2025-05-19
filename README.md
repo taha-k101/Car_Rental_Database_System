@@ -1,4 +1,4 @@
-### Car Rental Database Management System
+# Car Rental Database Management System
 
 ## Description: 
 
